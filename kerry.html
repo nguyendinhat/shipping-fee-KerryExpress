@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Tính Phí giao hàng bằng đường bộ Kerry Express
+    <a href="http://kerryexpress.com.vn/images/documents/KERRY-DAD-DUONGBO-vn.pdf" target="_blank"> theo bảng giá 2018</a> <br>
+    đơn hàng từ đà nẵng đến
+	<select id="tinhthanh" name="tinhthanh">
+		<option value="000">-Select City-</option>
+	</select><br>
+    KG của đơn hàng <input type="text" name="kg1" id="kg1"><br>
+    hoặc tính theo khích thước đơn hàng <br>
+    chiều dài <input type="text" name="d" id="d"><br>
+    chiều rộng <input type="text" name="r" id="r"><br>
+    chiều chiều cao <input type="text" name="c" id="c"><br>
+    <button type="submit" id="btnSubmit">tính phí</button>
+    <p id="kg2"></p>
+    Phí Giao hàng: <h1><span id="fee"></span>VND</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="kerry.js"></script>
+</body>
+</html>
